@@ -1,9 +1,4 @@
 (() => {
-  // Point the download button at this repository's latest release when served from GitHub Pages.
-  const apk = document.getElementById('apk');
-  const host = location.hostname.match(/^([a-z0-9-]+)\.github\.io$/i);
-  const repo = location.pathname.split('/').filter(Boolean)[0];
-  if (apk && host && repo) apk.href = `https://github.com/${host[1]}/${repo}/releases/latest/download/hush.apk`;
 
   // Feature tour: the sticky phone shows the screen for the chapter in view.
   const shots = [...document.querySelectorAll('.phone.stage img')];
